@@ -1,0 +1,171 @@
+
+
+
+
+#body {
+	background-color: black;
+	color:#3f3b3a;
+}
+
+.padding-0{
+  /* used to eliminate the padding between bootstrap columns
+    Not necessary in most cases*/ 
+  padding-right:0;
+  padding-left:0;
+}
+
+.width-max{
+	/* defines the global max width
+		of the images/text box */
+	max-width: 450px;
+}
+
+.nav-trigger {
+  /* used to hide checkbox */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+nav-trigger:checked ~ .site-wrap {
+  left 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+#header {
+	z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  line-height: 60px;
+  background-color: white;
+  color: black;
+}
+
+#logo {
+  position: absolute;
+  left: 50px;
+  top: 25px;
+  max-height: 50px;
+}
+
+#nav {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  height: 80px;
+}
+
+#nav ul li {
+  float: left;
+  list-style: none;
+  padding: 0 30px;
+}
+
+#nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 0 3px;
+}
+
+
+
+@media (max-width: 1280px) {
+  /* Cool header stuff. learned from:  
+		www.htmlgoodies.com/beyond/css/css-ref/building-responsive-web-page-headers.html 
+    codepen.io/SitePoint/pen/uIemr 
+    
+    the @media call must be after the default look (for some reason)
+    this redefines anything smaller than 1280px
+    */
+  
+  #header .container {
+    width: 100%;
+  }
+  #header h1 {
+    padding-left: 3%;
+  }
+  #nav {
+    width: 100%;
+    top: 100px;
+  }
+  #nav:before {
+    content: '\2630'; /* Hamburger Icon */
+    display: block;
+    position: absolute;
+    right: 4%;
+    top: -70px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  #nav ul {
+    background: white;
+    color: #3f3b3a;
+    width: 300px;
+    margin: 0px;
+    border-right: thick #3f3b3a;
+  }
+  #nav ul li {
+    float: none;
+  }
+  #nav ul li a {
+    padding: 10px 3%;
+    line-height: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

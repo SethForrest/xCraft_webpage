@@ -20,8 +20,6 @@
 	max-width: 450px;
 }
 
-
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -33,10 +31,9 @@
   font-family: 'Open Sans Condensed', sans-serif; 
   font-weight: normal;
   letter-spacing: 2px;
-  min-width: 180px;
 }
 
-/*
+/* An attempt at video
 .bg_video {
   position: absolute !important;
   background-position: 0 0;
@@ -47,6 +44,10 @@
   top: 100px;
 }
 */
+
+.navbar-default {
+  height: 100px;
+}
 
 #header {
 	z-index: 2;
@@ -81,7 +82,7 @@
 
 #nav_list li ul li{
   border-bottom: 1px dotted #bababa;
-  width: 160px;
+  min-width: 160px;
 }
 
 #navigation ul li {
@@ -101,86 +102,6 @@
   font-size: 14px;
   height: 50px;  
 }
-
-
-/*
-@media (max-width: 1280px) {
-   Cool header stuff. learned from:  
-		www.htmlgoodies.com/beyond/css/css-ref/building-responsive-web-page-headers.html 
-    codepen.io/SitePoint/pen/uIemr 
-    
-    the @media call must be after the default look (for some reason)
-    this redefines anything smaller than 1280px
-   
-  
-  #header .container {
-    width: 100%;
-  }
-  #header h1 {
-    padding-left: 3%;
-  }
-  #nav {
-    width: 100%;
-    top: 100px;
-  }
-  #nav:before {
-    content: '\2630'; 
-    display: block;
-    position: absolute;
-    right: 4%;
-    top: -70px;
-    line-height: 40px;
-    font-weight: bold;
-    font-size: 2em;
-    cursor: pointer;
-  }
-  #nav ul {
-    background: white;
-    color: #3f3b3a;
-    width: 300px;
-    margin: 0px;
-    border-right: thick #3f3b3a;
-  }
-  #nav ul li {
-    float: none;
-  }
-  #nav ul li a {
-    padding: 10px 3%;
-    line-height: 20px;
-  }
-}
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

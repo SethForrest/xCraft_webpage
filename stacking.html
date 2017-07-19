@@ -4,73 +4,92 @@
   <title>xCraft - Powerful Flying Machines</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
-<!-- Declare CSS here if you dont 
-	want to do it elsewhere -->
-<style type="text/css">
-</style>
 
 
 <body id="body">
 	
 	<header id="header" >
-		<div class="container">
-			<img id="logo"
+		<div class="container-fluid">
+			<img 	id="logo" 
 					src="small-centeredlogo-SharkTank_Prime-copy-copy.png" 
 					alt="HTML5 Icon" >
 			</img>
 				
-			<nav id="nav">
-				<ul>
+			<nav id="navigation" class="navbar" >
+				<ul id="nav_list">
 					<li>
 						<a href="http://xcraft.io">
-						<b>Home</b></a>
+						<b>HOME</b></a>
 					</li>
-					<li>
-						<a href="http://xcraft.io/xplusone-team-xcraft-vtol-drone-sandpoint-id/">
-						<b>About</b></a>
+					<li class="dropdown">
+						<a class="dropbtn" data-toggle="dropdown" href="http://xcraft.io/xplusone-team-xcraft-vtol-drone-sandpoint-id/">
+						<b>ABOUT</b></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://xcraft.io/xplusone-team-xcraft-vtol-drone-sandpoint-id/">
+								<b>Team</b></a></li>
+							<li><a href="http://xcraft.io/newsletter-signup/">
+								<b>Newsletter Sign up</b></a></li>
+							<li><a href="http://xcraft.io/terms-of-use/">
+								<b>Terms of Use</b></a></li>
+							<li><a href="http://xcraft.io/private-policy/">
+								<b>Privacy Policy</b></a></li>
+						</ul>
 					</li>
-					<li>
-						<a href="http://store.xcraft.io/?=products">
-						<b>Products</b></a>
+					<li class="dropdown">
+						<a class="dropbtn" data-toggle="dropdown" href="http://store.xcraft.io/?=products">
+						<b>PRODUCTS</b></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://store.xcraft.io/xplusone-store-xcraft-vtol-drone-sandpoint-id/rogue-beta">
+								<b>NEW Rogue *Beta*</b></a></li>
+							<li><a href="http://xcraft.io/x-plusone-drone/">
+								<b>X PlusOne</b></a></li>
+							<li><a href="http://xcraft.io/phone-drone/">
+								<b>PhoneDrone</b></a></li>
+						</ul>
 					</li>
 					<li>
 						<a href="http://store.xcraft.io/">
-						<b>Store</b></a>
+						<b>STORE</b></a>
 					</li>
 					<li>
 						<a href="http://xcraft.io/blog/">
-						<b>Blog</b></a>
+						<b>BLOG</b></a>
 					</li>
 					<li>
 						<a href="http://xcraft.io/xplusone-contact-xcraft-vtol-drone-sandpoint-id/">
-						<b>Support</b></a>
+						<b>SUPPORT</b></a>
 					</li>
 					<li>
 						<a href="http://xcraft.io/x2-geo/">
-						<b>X2 Geo</b></a>
+						<b>X2 GEO</b></a>
 					</li>
-					<li>
-				</ul>
-				
+				</ul>				
 			</nav>
 		</div>
 	</header>
 	
 	<div class="site-wrap" >
 		<!-- Title -->
-		<div class="jumbotron text-center" style="color: black; background-color: #3f3b3a; padding: 100px 50px;" >	
-			<h1>PhoneDrone - Ethos</h1> 
+		<div class="jumbotron text-center" style="color: black; background-color: white; padding: 100px 50px;" >	
+			<!-- Video Stuff -->
+      <div class="html15vid fullcoveredvideo bg_video" >
+        <video muted playsinline preload="auto" autoplay>
+          <source src="http://xcraft.io/wp-content/uploads/2016/02/Phone-Drone-Pitch2.mp4" type="video/mp4">
+        </video>
+      </div>
+     
+      <h1>PhoneDrone - Ethos</h1> 
 			<p>Now your phone can be as dynamic as you are</p> 
 		</div>
 		
 		<!-- Quad-image container -->
-		<div class=" jumbotron" style="background-color: black">
+		<div class=" jumbotron" style="background-color: black; color: white;">
 			<div	class="	container
 							text-center" >
 					
@@ -85,8 +104,7 @@
 									hidden-md
 									hidden-lg
 									width-max"
-							style="	color: #ff4e00;
-									padding: 10px 10px 10px 10px;
+							style="	padding: 10px 10px 10px 10px;
 									height: 100%">
 						<h1>PhoneDrone Ethos</h1> 
 						<p> A remarkable device that gives your smartphone wings, 
@@ -105,8 +123,7 @@
 									col-sm-6 
 									col-md-4
 									width-max"
-							style="	color: #ff4e00;
-									padding: 10px 10px 10px 10px;
+							style="	padding: 10px 10px 10px 10px;
 									height: 100%">
 						<h1>PhoneDrone Ethos</h1> 
 						<p> A remarkable device that gives your smartphone wings, 
@@ -123,8 +140,7 @@
 									col-sm-6 
 									col-md-4 
 									width-max"
-							style="	color: #ff4e00;
-									padding: 20px 20px 20px 20px">
+							style="	padding: 20px 20px 20px 20px">
 						<h2>Why is this revolutionary?</h2> 
 						<p>We’ve leveraged the sensor, processor, 
 						and wireless capability of your smartphone. 
@@ -149,7 +165,7 @@
 		</div>
 		
 		<!-- Feature List -->
-		<div class="jumbotron" style="background-color: black;" >	
+		<div class="jumbotron">	
 			<div class="container text-center">
 				
 				<div class="hidden-xs hidden-sm col-md-2"></div> <!-- Blank Cols -->
@@ -163,8 +179,7 @@
 								col-sm-6 
 								col-md-6
 								width-max"
-						style="	color: white;
-								padding: 0px 50px 0px 0px;">
+						style="	padding: 0px 50px 0px 0px;">
 					<h1>Cool Things! </h1> 
 					<ul style="list-style-type: none" align="left"> <!-- List -->
 						<li><b>Easy to use</b> – No drone experience necessary. </li>
@@ -189,7 +204,7 @@
 		</div>
 		
 		<!-- Video Player -->
-		<div class="container text-center" style="padding: 50px 20px;" >
+		<div class="jumbotron text-center" style="padding: 50px 20px; background-color: black" >
 			<div class="row">
 				
 				<div class="hidden-xs col-sm-1"></div> <!-- Blank Cols -->
@@ -206,12 +221,7 @@
 		
 			
 			<!-- Footer -->
-		<div	class="	jumbotron
-						text-center" 
-				style="	
-						color:	white;
-						background-color: #ff4e00;
-						padding: 50px 50px;" >		
+		<div id="footer">		
 			<h1>business stuff</h1> 
 			<p>Now your phone can be as dynamic as you are</p> 
 		</div>
